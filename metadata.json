@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Flareonix: Startup Intelligence & Idea Clarity",
+  "description": "An elite AI-driven platform for deep startup idea evaluation, market research, and strategic growth. Powered by Gemini, it provides Perplexity-style research, success metrics visualization, and expert-level feedback for founders.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
