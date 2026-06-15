@@ -78,7 +78,7 @@ export async function evaluateIdea(prompt: string, userProfile?: any): Promise<{
   try {
     const [evalPromise, searchPromise] = [
       ai.models.generateContent({
-        model: "gemini-3-flash-preview", 
+        model: "gemini-2.5-flash", 
         contents: prompt,
         config: {
           systemInstruction,
@@ -88,7 +88,7 @@ export async function evaluateIdea(prompt: string, userProfile?: any): Promise<{
         }
       }),
       ai.models.generateContent({
-        model: "gemini-3-pro-preview",
+        model: "gemini-2.5-pro",
         contents: `Research deep market analysis, real competitors, and specific talent requirements for: ${prompt}`,
         config: {
           tools: [{ googleSearch: {} }]
