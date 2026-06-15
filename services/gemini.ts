@@ -88,7 +88,7 @@ export async function evaluateIdea(prompt: string, userProfile?: any): Promise<{
         }
       }),
       ai.models.generateContent({
-        model: "gemini-2.5-pro",
+        model: "gemini-2.5-flash",
         contents: `Research deep market analysis, real competitors, and specific talent requirements for: ${prompt}`,
         config: {
           tools: [{ googleSearch: {} }]
